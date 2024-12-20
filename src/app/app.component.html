@@ -2,12 +2,12 @@
   <ul class="nav nav-pills">
     <li>
       <button (click)="gotoHome()"
-              [ngClass]="currentRoute== 'home'?'btn btn-danger ms-2': 'btn btn-outline-primary ms-2' "
+              [ngClass]="currentRoute == 'home' ? 'btn btn-danger ms-2' : 'btn btn-outline-primary ms-2'"
               >Home</button>
     </li>
     <li>
       <button (click)="gotoProducts()"
-              [ngClass]="currentRoute== 'products'?'btn btn-danger ms-2': 'btn btn-outline-primary ms-2' "
+              [ngClass]="currentRoute == 'products' ? 'btn btn-danger ms-2' : 'btn btn-outline-primary ms-2'"
               >Product</button>
     </li>
   </ul>

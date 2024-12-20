@@ -11,8 +11,8 @@
           <th>ID</th><th>Name</th><th>Price</th><th>Actions</th>
         </tr>
         </thead>
-        <tbody *ngIf="products">
-        <tr *ngFor="let p of products">
+        <tbody *ngIf="filteredProducts">
+        <tr *ngFor="let p of filteredProducts">
           <td>{{p.id}}</td>
           <td>{{p.name}}</td>
           <td>{{p.price}}</td>

@@ -3,14 +3,13 @@ import {Component, OnInit} from '@angular/core';
 @Component({
   selector: 'app-products',
   standalone: false,
-  templateUrl:'products.component.html',
+  templateUrl:'./products.component.html',
 })
 export class ProductsComponent implements OnInit {
   public products: any;
   public editingProduct: any = null;
   public keyword: string = '';
-  public filteredProducts: any=[];
-
+  public filteredProducts: any[] = [];
   constructor() {}
 
   ngOnInit() {
