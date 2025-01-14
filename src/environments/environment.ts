@@ -1,5 +1,5 @@
+// /Users/thejoker/IdeaProjects/FirstApp/src/environments/environment.ts
 export const environment = {
-  production: false,
-  apiUrl: 'http://localhost:8085',
-  backendHost: "http://localhost:8085"
+  production: true,
+  backendHost: 'https://your-production-api-url' // Update accordingly
 };

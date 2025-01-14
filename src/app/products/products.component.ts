@@ -1,9 +1,15 @@
 import {Component, OnInit} from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {NgForOf, NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-products',
-  standalone: false,
-  templateUrl:'./products.component.html',
+  templateUrl: './products.component.html',
+  imports: [
+    FormsModule,
+    NgForOf,
+    NgIf
+  ]
 })
 export class ProductsComponent implements OnInit {
   public products: any;
@@ -46,6 +52,7 @@ export class ProductsComponent implements OnInit {
   }
 
   // Search function
+  searchTerm: any;
   search(){
     this.filteredProducts = this.products.filter((p:any)=> p.name.includes(this.keyword));
   }

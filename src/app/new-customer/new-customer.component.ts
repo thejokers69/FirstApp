@@ -1,12 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {Customer} from "../model/customer.model";
 import {CustomerService} from "../services/customer.service";
 import {Router} from "@angular/router";
+import {NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-new-customer',
   templateUrl: './new-customer.component.html',
+  imports: [
+    ReactiveFormsModule,
+    NgIf
+  ],
   styleUrls: ['./new-customer.component.css']
 })
 export class NewCustomerComponent implements OnInit {

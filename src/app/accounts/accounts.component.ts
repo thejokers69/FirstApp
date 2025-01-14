@@ -1,12 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup} from "@angular/forms";
+import {FormBuilder, FormGroup, ReactiveFormsModule} from "@angular/forms";
 import {AccountsService} from "../services/accounts.service";
 import {catchError, Observable, throwError} from "rxjs";
 import {AccountDetails} from "../model/account.model";
+import {AsyncPipe, DatePipe, DecimalPipe, NgClass, NgForOf, NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-accounts',
   templateUrl: './accounts.component.html',
+  imports: [
+    ReactiveFormsModule,
+    AsyncPipe,
+    DecimalPipe,
+    DatePipe,
+    NgClass,
+    NgIf,
+    NgForOf
+  ],
   styleUrls: ['./accounts.component.css']
 })
 export class AccountsComponent implements OnInit {

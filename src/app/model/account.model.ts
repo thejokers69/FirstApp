@@ -14,3 +14,6 @@ export interface AccountOperation {
   type:          string;
   description:   string;
 }
+
+export class Account {
+}

@@ -3,3 +3,5 @@ export interface Customer {
   name : string;
   email : string;
 }
+export class Customer {
+}
