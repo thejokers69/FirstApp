@@ -1,151 +1,130 @@
 # FirstApp
 
-This project was generated using Angular CLI version **19.0.5**.
+Ce projet a été généré avec Angular CLI version **19.0.5**.
 
-## Author
+## Auteur
 **Mohamed Lakssir**  
-Class: **2ACI Info**
-
-## Table of Contents
-- [Development Server](#development-server)
-- [Code Scaffolding](#code-scaffolding)
-- [Building](#building)
-- [Running Unit Tests](#running-unit-tests)
-- [Running End-to-End Tests](#running-end-to-end-tests)
-- [Linting](#linting)
-- [Version Compatibility](#version-compatibility)
-- [Project Structure](#project-structure)
-- [Additional Resources](#additional-resources)
+Classe : **2ACI Info**
 
 ---
 
-## Development Server
+## Table des Matières
+- [Serveur de Développement](#serveur-de-développement)
+- [Génération de Code](#génération-de-code)
+- [Compilation](#compilation)
+- [Tests Unitaires](#tests-unitaires)
+- [Tests End-to-End](#tests-end-to-end)
+- [Linting](#linting)
+- [Compatibilité des Versions](#compatibilité-des-versions)
+- [Structure du Projet](#structure-du-projet)
+- [Captures d’Écran](#captures-d’écran)
+- [Notes](#notes)
 
-To start a local development server, run the following command:
+---
+
+## Serveur de Développement
+
+Pour démarrer le serveur de développement local, exécutez la commande suivante :
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to [http://localhost:4200/](http://localhost:4200/). The application will automatically reload whenever you modify any of the source files.
-
-### Customizing the Development Server
-- To change the default port:
-  ```bash
-  ng serve --port <your-port>
-  ```
-- To enable hot module replacement (HMR):
-  ```bash
-  ng serve --hmr
-  ```
+Une fois le serveur lancé, ouvrez votre navigateur et accédez à [http://localhost:4200/](http://localhost:4200/). L’application se rechargera automatiquement lorsque vous modifiez un fichier source.
 
 ---
 
-## Code Scaffolding
+## Génération de Code
 
-Angular CLI provides powerful scaffolding tools to streamline development. To generate a new component, run:
+Angular CLI offre des outils puissants pour générer du code. Voici quelques commandes courantes :
 
-```bash
-ng generate component <component-name>
-```
+- **Générer un composant** :
+  ```bash
+  ng generate component <nom-du-composant>
+  ```
+- **Générer un service** :
+  ```bash
+  ng generate service <nom-du-service>
+  ```
+- **Générer un module** :
+  ```bash
+  ng generate module <nom-du-module>
+  ```
 
-### Common Scaffolding Commands
-- **Component**: `ng generate component <component-name>`
-- **Directive**: `ng generate directive <directive-name>`
-- **Pipe**: `ng generate pipe <pipe-name>`
-- **Service**: `ng generate service <service-name>`
-- **Module**: `ng generate module <module-name>`
-
-For a complete list of schematics, use:
-
+Pour voir toutes les options de génération, utilisez :
 ```bash
 ng generate --help
 ```
 
 ---
 
-## Building
+## Compilation
 
-To build the project for deployment, use:
+Pour compiler le projet pour la production, utilisez :
 
 ```bash
 ng build
 ```
 
-The compiled files will be stored in the `dist/` directory. By default, this creates a production-optimized build. To build for a specific environment or configuration, use:
+Les fichiers compilés seront placés dans le répertoire `dist/`. Pour spécifier un environnement ou une configuration particulière :
 
 ```bash
-ng build --configuration=<config-name>
+ng build --configuration=<nom-de-la-configuration>
 ```
-
-### Build Options
-- Enable source maps for debugging:
-  ```bash
-  ng build --source-map
-  ```
-- Analyze the bundle size:
-  ```bash
-  ng build --stats-json
-  ```
 
 ---
 
-## Running Unit Tests
+## Tests Unitaires
 
-To execute unit tests using the [Karma Test Runner](https://karma-runner.github.io), run:
+Pour exécuter les tests unitaires avec [Karma Test Runner](https://karma-runner.github.io), utilisez :
 
 ```bash
 ng test
 ```
 
-### Tips
-- To watch for file changes during testing:
-  ```bash
-  ng test --watch
-  ```
-- To run specific tests, use the `fit` or `fdescribe` methods in your test files.
+Pour surveiller les modifications des fichiers pendant les tests :
+```bash
+ng test --watch
+```
 
 ---
 
-## Running End-to-End Tests
+## Tests End-to-End
 
-For end-to-end testing, use the following command:
+Pour effectuer des tests end-to-end, utilisez :
 
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. To set up e2e testing, you can install and configure a framework like [Cypress](https://www.cypress.io/) or [Protractor](https://www.protractortest.org/).
+Si un framework e2e n'est pas configuré, vous pouvez utiliser [Cypress](https://www.cypress.io/) ou [Protractor](https://www.protractortest.org/).
 
 ---
 
 ## Linting
 
-To ensure code quality and consistency, run the linter with:
+Pour vérifier la qualité du code et sa cohérence, exécutez :
 
 ```bash
 ng lint
 ```
 
-### Tips
-- Automatically fix lint errors:
-  ```bash
-  ng lint --fix
-  ```
+Pour corriger automatiquement les erreurs de linting :
+```bash
+ng lint --fix
+```
 
 ---
 
-## Version Compatibility
+## Compatibilité des Versions
 
-### Node.js
-Ensure you are using a compatible Node.js version. Angular CLI **19.0.5** is optimized for Node.js LTS versions. Check your current Node.js version:
+Assurez-vous que Node.js est compatible. Angular CLI **19.0.5** est optimisé pour les versions LTS de Node.js. Vérifiez votre version actuelle de Node.js avec :
 
 ```bash
 node -v
 ```
 
-To update Node.js to the latest LTS version, use [nvm](https://github.com/nvm-sh/nvm):
-
+Pour mettre à jour Node.js à la dernière version LTS :
 ```bash
 nvm install --lts
 nvm use --lts
@@ -153,74 +132,94 @@ nvm use --lts
 
 ---
 
-## Project Structure
+## Structure du Projet
 
-Below is the project structure:
+Après les modifications apportées, voici la structure actuelle du projet :
 
 ```
 .
 ├── README.md
-├── ScreenShot
-│   ├── ChangeComputerToDesktopandPrice.png
-│   ├── DeleteDesktop.png
-│   ├── Homecomponent.png
-│   ├── ProductComponent.png
-│   └── SearchCustomer.png
 ├── angular.json
 ├── package-lock.json
 ├── package.json
-├── project_structure.txt
-├── public
-│   └── favicon.ico
 ├── src
 │   ├── app
+│   │   ├── accounts
+│   │   │   ├── accounts.component.css
+│   │   │   ├── accounts.component.html
+│   │   │   ├── accounts.component.spec.ts
+│   │   │   └── accounts.component.ts
 │   │   ├── app-routing.module.ts
 │   │   ├── app.component.css
 │   │   ├── app.component.html
 │   │   ├── app.component.spec.ts
 │   │   ├── app.component.ts
 │   │   ├── app.module.ts
+│   │   ├── customers
+│   │   │   ├── customers.component.css
+│   │   │   ├── customers.component.html
+│   │   │   ├── customers.component.spec.ts
+│   │   │   └── customers.component.ts
+│   │   ├── customer-accounts
+│   │   │   ├── customer-accounts.component.css
+│   │   │   ├── customer-accounts.component.html
+│   │   │   ├── customer-accounts.component.spec.ts
+│   │   │   └── customer-accounts.component.ts
 │   │   ├── home
 │   │   │   ├── home.component.css
 │   │   │   ├── home.component.html
 │   │   │   ├── home.component.spec.ts
 │   │   │   └── home.component.ts
-│   │   └── products
-│   │       ├── products.component.css
-│   │       ├── products.component.html
-│   │       ├── products.component.spec.ts
-│   │       └── products.component.ts
+│   │   ├── model
+│   │   │   ├── account.model.ts
+│   │   │   └── customer.model.ts
+│   │   ├── navbar
+│   │   │   ├── navbar.component.css
+│   │   │   ├── navbar.component.html
+│   │   │   ├── navbar.component.spec.ts
+│   │   │   └── navbar.component.ts
+│   │   ├── new-customer
+│   │   │   ├── new-customer.component.css
+│   │   │   ├── new-customer.component.html
+│   │   │   ├── new-customer.component.spec.ts
+│   │   │   └── new-customer.component.ts
+│   │   └── services
+│   │       ├── accounts.service.ts
+│   │       └── customer.service.ts
+│   ├── environments
+│   │   ├── environment.prod.ts
+│   │   └── environment.ts
 │   ├── index.html
 │   ├── main.ts
 │   └── styles.css
-├── tsconfig.app.json
-├── tsconfig.json
-└── tsconfig.spec.json
-
-7 directories, 31 files
+└── tsconfig.json
 ```
 
 ---
 
-## Screenshots
-Here are some screenshots of the application:
+## Captures d’Écran
 
-- **Change Computer to Desktop and Price:**
-  ![Change Computer to Desktop and Price](ScreenShot/ChangeComputerToDesktopandPrice.png)
+Voici quelques captures d'écran de l'application :
 
-- **Delete Desktop:**
-  ![Delete Desktop](ScreenShot/DeleteDesktop.png)
+- **Composant Home** :
+  ![Composant Home](ScreenShot/HomeComponent.png)
 
-- **Home Component:**
-  ![Home Component](ScreenShot/Homecomponent.png)
+- **Composant Products** :
+  ![Composant Products](ScreenShot/ProductsComponent.png)
 
-- **Product Component:**
-  ![Product Component](ScreenShot/ProductComponent.png)
-
-- **Search Customer:**
-  ![Search Customer](ScreenShot/SearchCustomer.png)
+- **Composant Customers** :
+  ![Composant Customers](ScreenShot/CustomersComponent.png)
 
 ---
 
-### Notes
-If you encounter any issues, feel free to open an issue or consult the Angular documentation for troubleshooting guidance.
+## Notes
+- Toutes les modifications ont été effectuées en suivant les consignes du professeur.
+- Les nouveaux fichiers et dossiers ajoutés incluent :
+  - `customer-accounts`
+  - `model`
+  - `new-customer`
+  - `services`
+  - `environments`
+
+En cas de problèmes, référez-vous à la [documentation officielle Angular](https://angular.io/docs).
+
