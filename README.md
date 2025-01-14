@@ -1,4 +1,3 @@
-
 # FirstApp
 
 This project was generated using Angular CLI version **19.0.5**.
@@ -15,6 +14,7 @@ Class: **2ACI Info**
 - [Running End-to-End Tests](#running-end-to-end-tests)
 - [Linting](#linting)
 - [Version Compatibility](#version-compatibility)
+- [Project Structure](#project-structure)
 - [Additional Resources](#additional-resources)
 
 ---
@@ -153,13 +153,72 @@ nvm use --lts
 
 ---
 
-## Additional Resources
+## Project Structure
 
-- [Angular CLI Documentation](https://angular.dev/tools/cli)
-- [Angular Documentation](https://angular.dev/)
-- [Angular Style Guide](https://angular.io/guide/styleguide)
-- [Karma Test Runner](https://karma-runner.github.io)
-- [Protractor End-to-End Testing](https://www.protractortest.org/)
+Below is the project structure:
+
+```
+.
+├── README.md
+├── ScreenShot
+│   ├── ChangeComputerToDesktopandPrice.png
+│   ├── DeleteDesktop.png
+│   ├── Homecomponent.png
+│   ├── ProductComponent.png
+│   └── SearchCustomer.png
+├── angular.json
+├── package-lock.json
+├── package.json
+├── project_structure.txt
+├── public
+│   └── favicon.ico
+├── src
+│   ├── app
+│   │   ├── app-routing.module.ts
+│   │   ├── app.component.css
+│   │   ├── app.component.html
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   ├── app.module.ts
+│   │   ├── home
+│   │   │   ├── home.component.css
+│   │   │   ├── home.component.html
+│   │   │   ├── home.component.spec.ts
+│   │   │   └── home.component.ts
+│   │   └── products
+│   │       ├── products.component.css
+│   │       ├── products.component.html
+│   │       ├── products.component.spec.ts
+│   │       └── products.component.ts
+│   ├── index.html
+│   ├── main.ts
+│   └── styles.css
+├── tsconfig.app.json
+├── tsconfig.json
+└── tsconfig.spec.json
+
+7 directories, 31 files
+```
+
+---
+
+## Screenshots
+Here are some screenshots of the application:
+
+- **Change Computer to Desktop and Price:**
+  ![Change Computer to Desktop and Price](ScreenShot/ChangeComputerToDesktopandPrice.png)
+
+- **Delete Desktop:**
+  ![Delete Desktop](ScreenShot/DeleteDesktop.png)
+
+- **Home Component:**
+  ![Home Component](ScreenShot/Homecomponent.png)
+
+- **Product Component:**
+  ![Product Component](ScreenShot/ProductComponent.png)
+
+- **Search Customer:**
+  ![Search Customer](ScreenShot/SearchCustomer.png)
 
 ---
 
